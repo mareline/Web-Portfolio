@@ -1,7 +1,10 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
 section{
     height: 500px;
-    background-color: yellow;
-    border: solid black 1px;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(255, 255, 255) 1px;
 }
 
 .hero{
@@ -12,7 +15,7 @@ section{
 }
 footer {
     height: 500px;
-    background-color:black;
+    background-color:#D8BFD8;
 }
 
 nav{
@@ -30,4 +33,53 @@ ul{
 
 li{
     text-decoration: none;
+}
+
+h1{
+    font-size: 90px;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.hero-area{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero-text{
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.button{
+    width: 200px;
+    height: 55px;
+    border-radius:25px;
+    background-color: darkslateblue;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: rgb(53, 45, 104);
+}
+
+.button:active {
+    background-color:rgb(142, 126, 245);
+    color: #D8BFD8
+}
+
+.socials {
+    padding-bottom: 200px;
 }
