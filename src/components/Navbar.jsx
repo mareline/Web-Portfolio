@@ -24,7 +24,7 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Mareline Ramirez 
+            Mareline Ramirez &nbsp; 
             <span className='sm:block hidden'> | CS Student  @ FIU </span>
           </p>
         </Link>
@@ -45,11 +45,33 @@ const Navbar = () => {
         </ul>
         {/* When the window is small or it is viewed on a smaller device, the navbar will still present its option */} 
         <div className='sm:hidden flex flex-1  justify-end items-center'>
+          
+        {/* mobile menu ... with the toggle, you can see the menu icon and it should change when you click on it
+        you will have the option to close if opened etc */}
           <img
-          src={menu}
-          alt="meu"
-          className='w-[28px] h-[28px] object-contain cursor-pointer'
-          onClick={() => setTogggle(!toggle)}/>
+            src={toggle ? close :menu}
+            alt="meu"
+            className='w-[28px] h-[28px] object-contain cursor-pointer'
+            onClick={() => setTogggle(!toggle)}/>
+          <div className={`${!toggle ? 'hidden' : 'flex' } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl`}>
+            <ul className='list-none flex justify-end items-start flex-col gap-4'>
+              {navLinks.map((nav) => (
+                <li
+                key={nav.id}
+                // This lets us know whether the content we have available is active or not
+                className={`${
+                  active === nav.title ? "text-white" : "text-secondary"
+                } font-poppins font-medium cursor-pointer text-[16px]`}
+                //the setToggle is set to not toggle which will close the tab once a link has been clicked on
+                onClick={() => {
+                  setTogggle(!toggle);
+                  setActive(nav.title)}}
+                >
+                  <a href={`#${nav.id}`}>{nav.title}</a>
+                </li>
+              ))}
+          </ul>
+          </div>
         </div>
       </div>
     </nav>
