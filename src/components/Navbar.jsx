@@ -2,10 +2,13 @@ import React, { useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 
 import { styles } from '../styles'
+import { navLinks } from "../constants";
 import { logo, menu, close } from '../assets'
 
+//This is creating how the navbar would look along with adding the about, work, and contact information
 const Navbar = () => {
   const [active, setActive] = useState('')
+  const [toggle, setTogggle] = useState(false);
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
@@ -20,10 +23,34 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18x] font-bold cursor-pointer'>
-            Mareline Ramirez <span className='sm:block hidden'> | CS Student  @ FIU </span>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+            Mareline Ramirez 
+            <span className='sm:block hidden'> | CS Student  @ FIU </span>
           </p>
         </Link>
+  
+        <ul className='list-none hidden sm:flex flex-row gap-10'>
+            {navLinks.map((nav) => (
+              <li
+              key={nav.id}
+              // This lets us know whether the content we have available is active or not
+              className={`${
+                active === nav.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(nav.title)}
+              >
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              </li>
+            ))}
+        </ul>
+        {/* When the window is small or it is viewed on a smaller device, the navbar will still present its option */} 
+        <div className='sm:hidden flex flex-1  justify-end items-center'>
+          <img
+          src={menu}
+          alt="meu"
+          className='w-[28px] h-[28px] object-contain cursor-pointer'
+          onClick={() => setTogggle(!toggle)}/>
+        </div>
       </div>
     </nav>
   )
