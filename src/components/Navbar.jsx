@@ -1,19 +1,17 @@
-import React, { useEffect, useState} from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-import { styles } from '../styles'
-import { navLinks } from "../constants";
-import { logo, menu, close } from '../assets'
+import { styles } from "../styles";
+import { navLinks} from '../constants';
+import { logo, menu, close } from '../assets';
 
-//This is creating how the navbar would look along with adding the about, work, and contact information
 const Navbar = () => {
-  const [active, setActive] = useState('')
-  const [toggle, setTogggle] = useState(false);
+  const [active, setActive] = useState("");
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={'${styles.paddingX}} w-full flex items-center py-5 fixed top-0 z-20 bg-primary'}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center max-w-7l mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -21,59 +19,26 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0);
           }}
-        >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Mareline Ramirez &nbsp; 
-            <span className='sm:block hidden'> | CS Student  @ FIU </span>
-          </p>
+          >
+            <img src={logo} alt="logo" className="w-10 h-10" />
+            <p className="text-white text-[18px] font-bold cursor-pointer"> Mareline Ramirez </p>
         </Link>
-  
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
-            {navLinks.map((nav) => (
-              <li
+        <ul className="list-none sm:flex flex-row gap-10">
+          {navLinks.map((nav) => (
+            <li
               key={nav.id}
-              // This lets us know whether the content we have available is active or not
+              /* Shows if the link is active or not while the mouse is hovered */
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
-              >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
+            >
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </li>
+          ))}
         </ul>
-        {/* When the window is small or it is viewed on a smaller device, the navbar will still present its option */} 
-        <div className='sm:hidden flex flex-1  justify-end items-center'>
-          
-        {/* mobile menu ... with the toggle, you can see the menu icon and it should change when you click on it
-        you will have the option to close if opened etc */}
-          <img
-            src={toggle ? close :menu}
-            alt="meu"
-            className='w-[28px] h-[28px] object-contain cursor-pointer'
-            onClick={() => setTogggle(!toggle)}/>
-          <div className={`${!toggle ? 'hidden' : 'flex' } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl`}>
-            <ul className='list-none flex justify-end items-start flex-col gap-4'>
-              {navLinks.map((nav) => (
-                <li
-                key={nav.id}
-                // This lets us know whether the content we have available is active or not
-                className={`${
-                  active === nav.title ? "text-white" : "text-secondary"
-                } font-poppins font-medium cursor-pointer text-[16px]`}
-                //the setToggle is set to not toggle which will close the tab once a link has been clicked on
-                onClick={() => {
-                  setTogggle(!toggle);
-                  setActive(nav.title)}}
-                >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
-                </li>
-              ))}
-          </ul>
-          </div>
-        </div>
       </div>
+
     </nav>
   )
 }
