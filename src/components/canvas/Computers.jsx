@@ -61,6 +61,7 @@ const ComputersCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
+      [/* Allows user to move the computer from left to right */]
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
