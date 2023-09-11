@@ -116,86 +116,71 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: " Technical Lead and Industry Relation",
+      company_name: "WiCS at FIU",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "July 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Implemented strategies to promote diversity and inclusion within the organization.",
+        "Collaborated with stakeholders to identify and prioritize project requirements.",
+        "Collaborated with cross-functional teams to design and implement resourceful workshops to empower and train women at FIU.",
+        "Conducted training sessions to enhance professional development and technical skills.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "Capital One Tech Mini-Mester",
+      company_name: "Capital One",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Aug 2023 - August 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Participated in a 5-day tech immersive experience designed to empower students from diverse backgrounds to pursue STEM careers",
+        "Acquired in-depth knowledge of Node, API, Arrays, Objects, and Iterations through hands-on workshops and projects.",
+        "Engaged in mentorship and networking opportunities with industry professionals, fostering valuable connections.",
+        "Built a CLI-Based Coding Project in 24 hours and presented in front of Capital One leadership.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Chapter Director",
+      company_name: "TechTogether",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Sep 2022 - Aug 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Managed the development of TechTogether Miami to create a gender-focused hackathon for the Miami Tech community to increase gender diversity by planning and managing various projects, including budgeting, resource allocation, and timeline management.",
+        "Conducted 50+ interviews to lead a successful organizing team of 20 organizers.",
+        "Developed relationships with stakeholders in Miami's Tech community to prioritize the necessary resources to organize a successful hackathon.",
+        "Liaised between cross-functional teams and ensured effective communication.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "Student Mentor/Teaching Assistant",
+      company_name: "Break Through Tech Miami",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Seasonal",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Partnered with the director of Breakthrough Tech Miami to implement a lesson plan tailored to 25 - 45 FIU students of marginalized genders to introduce them to coding.",
+        "Assisted students create their application using MIT Media Lab, create music using Python, explore Artificial Intelligence and create a face portfolio using JavaScript.",
+        "Provided frequent feedback to students to foster a welcoming environment of open communication and interest in technology.",
+      ],
+    },
+
+    {
+      title: "Instructor",
+      company_name: "UPE Ignite at FIU",
+      icon: meta,
+      iconBg: "#E6DEDD",
+      date: "Jan 2022 - Apr 2022",
+      points: [
+        "Lead a class of 25 students from Coral Park Elementary to introduce and enhance their coding skills using Code.org and MIT Media Lab.",
+        "Designed a game and animation curriculum for the students to increase the number of participants and develop an in-depth project for UPE's Coding Contest.",
+        "Offered additional assistance via 1-on-1 with students to help further their project creation, which has helped the school win 1st, 2nd, and 3rd place from UPE'S Coding Contest.",
       ],
     },
   ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
+
   const projects = [
     {
       name: "Car Rent",
