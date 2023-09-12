@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Typed from 'react-typed'
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
@@ -17,17 +18,25 @@ const Hero = () => {
 {/* Tag and bio */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hey, it's <span className='text-[#915EFF]'>Mareline!</span>
+            Hey, it's <span className='text-[#915EFF]'>
+            <div className="animated-typing">
+              <Typed
+                strings={['Mareline!',]}
+                typeSpeed={150}
+                backSpeed={100}
+                loop />
+            </div>
+            </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I am an undergraduate student at Florida International University studying Computer Science.
           </p>
         </div>
       </div>
-
       <ComputersCanvas />
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      {/* This is the animated scrolly thingy */}
+      <div className='absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
