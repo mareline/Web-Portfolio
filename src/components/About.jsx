@@ -59,7 +59,7 @@ const About = () => {
         I am fluent in English and Spanish, and am skilled in Java, Javascript, HTML, CSS, MySQL, and Python.
       </motion.p>
       
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10 place-content-center'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

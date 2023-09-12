@@ -15,14 +15,20 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    CapitalOne,
+    BreakThroughTech,
+    WiCS,
+    UPE,
+    TechTogether,
     carrent,
     jobit,
     tripguide,
     threejs,
+    Adobe,
+    MySQL,
+    Python,
+    Java,
+    ThreeJS,
   } from "../assets";
   
   export const navLinks = [
@@ -70,16 +76,16 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Java",
+      icon: Java,
     },
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Python",
+      icon: Python,
     },
     {
       name: "Tailwind CSS",
@@ -90,12 +96,12 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "MySQL",
+      icon: MySQL,
     },
     {
       name: "Three JS",
-      icon: threejs,
+      icon: ThreeJS,
     },
     {
       name: "git",
@@ -106,8 +112,8 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "Adobe",
+      icon: Adobe,
     },
   ];
   
@@ -115,7 +121,7 @@ import {
     {
       title: " Technical Lead and Industry Relation",
       company_name: "WiCS at FIU",
-      icon: starbucks,
+      icon: WiCS,
       iconBg: "#383E56",
       date: "July 2023 - Present",
       points: [
@@ -128,7 +134,7 @@ import {
     {
       title: "Capital One Tech Mini-Mester",
       company_name: "Capital One",
-      icon: tesla,
+      icon: CapitalOne,
       iconBg: "#E6DEDD",
       date: "Aug 2023 - August 2023",
       points: [
@@ -141,7 +147,7 @@ import {
     {
       title: "Chapter Director",
       company_name: "TechTogether",
-      icon: shopify,
+      icon: TechTogether,
       iconBg: "#383E56",
       date: "Sep 2022 - Aug 2023",
       points: [
@@ -154,7 +160,7 @@ import {
     {
       title: "Student Mentor/Teaching Assistant",
       company_name: "Break Through Tech Miami",
-      icon: meta,
+      icon: BreakThroughTech,
       iconBg: "#E6DEDD",
       date: "Seasonal",
       points: [
@@ -167,7 +173,7 @@ import {
     {
       title: "Instructor",
       company_name: "UPE Ignite at FIU",
-      icon: meta,
+      icon: UPE,
       iconBg: "#E6DEDD",
       date: "Jan 2022 - Apr 2022",
       points: [
@@ -180,16 +186,16 @@ import {
 
   const projects = [
     {
-      name: "Car Rent",
+      name: "3D Web Design Portfolio",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A 3D web design portfolio that showcases my projects and skills using ThreeJS and ReactJS.",
       tags: [
         {
-          name: "react",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "threejs",
           color: "green-text-gradient",
         },
         {
@@ -198,44 +204,37 @@ import {
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/mareline/Web-Portfolio.git",
     },
     {
-      name: "Job IT",
+      name: "100 Days of Python",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A 100 days of Python challenge that consists of different projects using Python.",
       tags: [
         {
-          name: "react",
+          name: "Python",
           color: "blue-text-gradient",
         },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
+
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/mareline/100-Days-of-Code.git",
     },
     {
-      name: "Trip Guide",
+      name: "Bookstore",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A classroom assignment that showcases a library using Java, Postman, Spring Boot, and MySQL.",
       tags: [
         {
-          name: "nextjs",
+          name: "Java",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "MySQL",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Postman",
           color: "pink-text-gradient",
         },
       ],

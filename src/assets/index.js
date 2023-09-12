@@ -20,11 +20,17 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import Adobe from "./tech/Adobe.png";
+import MySQL from "./tech/MySQL.png";
+import Python from "./tech/Python.png";
+import Java from "./tech/Java.png";
+import ThreeJS from "./tech/ThreeJS.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import BreakThroughTech from "./company/BreakThroughTech.png";
+import CapitalOne from "./company/CapitalOne.png";
+import TechTogether from "./company/TechTogether.png";
+import UPE from "./company/UPE.png";
+import WiCS from "./company/WiCS.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -52,11 +58,17 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  BreakThroughTech,
+  CapitalOne,
+  TechTogether,
+  UPE,
+  WiCS,
   carrent,
   jobit,
   tripguide,
+  Adobe,
+  MySQL,
+  Python,
+  Java,
+  ThreeJS,
 };
