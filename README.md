@@ -1,8 +1,12 @@
-# React + Vite
+Portfolio with commentaries where I used and learned the following:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+    ThreeJS - a 3D graphics library for rendering and animating the 3D model
+    React Three Fiber - a library for creating 3D graphics with ThreeJS in React
+    TailwindCSS - a utility-first CSS styling framework
+    Framer Motion - a library used to bring your React website to life with animations 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+With this project, I have been able to:
+    Load, create and customize 3D models and geometries with various lights, as well as understand the 3D world with a camera and positioning of an object in space.
+    Make your code reusable and scalable using Higher Order Components (HOCs)
+    Implement sending emails through a form on the website
+    Ensure responsiveness across all devices and improve your site's performance using Suspense and Preload.
