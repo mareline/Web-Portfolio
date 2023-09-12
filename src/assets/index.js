@@ -32,9 +32,9 @@ import TechTogether from "./company/TechTogether.png";
 import UPE from "./company/UPE.png";
 import WiCS from "./company/WiCS.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import RockPaper from "./RockPaper.png";
+import Portfolio from "./Portfolio.png";
+import Bookstore from "./Bookstore.png";
 
 export {
   logo,
@@ -63,12 +63,12 @@ export {
   TechTogether,
   UPE,
   WiCS,
-  carrent,
-  jobit,
-  tripguide,
   Adobe,
   MySQL,
   Python,
   Java,
   ThreeJS,
+  RockPaper,
+  Portfolio,
+  Bookstore,
 };
