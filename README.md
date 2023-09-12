@@ -1,4 +1,4 @@
-Portfolio with commentaries where I have learned the following:
+Portfolio with commentaries where I used and learned the following:
 
     ThreeJS - a 3D graphics library for rendering and animating the 3D model
     React Three Fiber - a library for creating 3D graphics with ThreeJS in React
